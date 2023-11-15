@@ -4,3 +4,4 @@ Trabajo Final Sprint BA
 <h2> Este sitio web de una pequeña y humilde bicicleteria ubicada en Once </h2>
 <p> Dentro de la misma van a encontrar Codigo HTML y CSS en las cuatro direcciones. 
   El codigo JavaScript precisamente lo encontraran en la seccion "Bicicletas" con los botones "Agregar al carrito" y el boton "Pagar" </p>
+  <p> Link de repositorio es https://github.com/Santimendoza23/Sprint-Final y el deploy es https://santimendoza23.github.io/Sprint-Final/  </p>
