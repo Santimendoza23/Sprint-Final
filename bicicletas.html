@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35acbbecd3.js" ></script>
+</head>
+<body>
+
+    <header>
+    <div class="menu container"></div>  
+        <img class="logomendo"  src="images/Mendo bikes.png" alt="">
+            <nav>
+                <a target="_blank"  href="index.html"> Inicio </a>
+                <a target="_blank"  href="bicicletas.html">Bicicletas</a>
+                <a target="_blank"  href="metodo.html">Metodo de Pago</a>
+                <a target="_blank"  href="contacto.html">Contacto</a>  
+                <button id="checkout" class="button-checkout" onclick="pay()"> Pagar </button>
+            </nav>
+
+    <div> 
+
+    </div>  
+    </header>
+
+<main class="productos container">
+    <h2> Bicicletas </h2>
+
+    <div class="box-container" id="lista-1"> 
+        
+        <div class="box">
+            <img src="images/Bird Carrera 2.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Bird Carrera</h2>
+                <p class="precio"> 220.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">
+                    <button class="button-add" onclick="add('bird carrera', 220000)"> Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Bird Rocky Azul.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Bird Rocky Azul</h2>
+                <p class="precio"> 110.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">
+                    <button class="button-add" onclick="add('birdrockyazul', 110000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Bird Rocky Rooj.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Bird Rocky Rojo</h2>
+                <p class="precio"> 110.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">
+                    <button class="button-add" onclick="add('birdrockyrojo', 110000)"  > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Bird Vanguard.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Bird Vanguard</h2>
+                <p class="precio"> 100.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="4">
+                    <button class="button-add" onclick="add('birdvanguard', 100000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Bird Rueditas.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Bird Rueditas Niño</h2>
+                <p class="precio"> 220.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="5">
+                    <button class="button-add" onclick="add('birdrueditas', 220000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Free Bird Plegable.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Free Bird Plegable</h2>
+                <p class="precio"> 175.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="6">
+                    <button class="button-add" onclick="add('birdplegable', 175000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Kelinbike 25.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Kelinbike 25</h2>
+                <p class="precio"> 110.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="7">
+                    <button class="button-add" onclick="add('kelinkbike25', 110000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+       
+        <div class="box">
+            <img src="images/Kelinbike 26.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Kelinbike 26</h2>
+                <p class="precio"> 155.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="8">
+                    <button class="button-add" onclick="add('kelinbike26', 155000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Kelinbike 27.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Kelinbike 27</h2>
+                <p class="precio"> 220.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="9">
+                    <button class="button-add" onclick="add('kelinbike27', 220000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Olmo Raver.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Olmo Raver </h2>
+                <p class="precio"> 180.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="10">
+                    <button class="button-add" onclick="pay('olmoraver', 180000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Olmo Urbana.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Olmo Urbana</h2>
+                <p class="precio"> 200.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="11">
+                    <button class="button-add" onclick="add('olmourbana', 200000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Olmo Wish.jpg" alt="">
+            <div class="product-txt" >
+                <h2>Olmo Wish</h2>
+                <p class="precio"> 150.000$ </p>
+                <a href="#" class="agregar-carrito btn-3" data-id="12">
+                    <button class="button-add" onclick="add('olmowish', 150000)" > Agregar al Carrito </button>
+                </a>
+             </div>
+        </div>
+
+    </div>
+
+    </main>
+
+    <br>
+    <br>
+    <br>
+    
+ <h1>  <span class="color-historia">Testimonios de nuestros clientes</span> </h1>
+
+    <section class="testimonios container">
+    
+        <div class="testimonio-1" >
+           <img src="images/cincoestrellas.jpg" width="180px" height="200px" alt="">
+           <p>Genial la atención!!! Muy claros y precisos ... Los precios muy buenos... Recomendable con tiempo para explicarte todo.</p>
+           <p> Carlos </p>
+        </div>
+
+        <div class="testimonio-1" >
+           <img src="images/cincoestrellas.jpg" width="180px" height="200px" alt="">
+           <p>El mejor precio del país en bicicletas de contado y cuotas. Muy honesto, recibí mí cleta en la costa sin app de ventas y 0 cero problemas.</p>
+           <p> Eugenia </p>
+        </div>
+
+        <div class="testimonio-1" >
+            <img src="images/cincoestrellas.jpg" width="180px" height="200px" alt="">
+            <p>La atención a mí me parece buenísima. Compré mi bici ya hace más de 6 meses acá y siempre fue de 10. El service sin lugar a dudas increíble también.</p>
+            <p> Vanessa </p>
+        </div>
+
+    </section>
+
+ <script src="script.js">  </script> 
+
+</body>
+
+
+<footer class="redsocial" >
+    <div class="social">
+        <a href="#" class="fa fa-facebook" ></a>
+        <a href="#" class="fa fa-instagram" ></a>
+        <a href="#" class="fa fa-twitter"    ></a>
+            </div>
+    </footer>
+
+</html>

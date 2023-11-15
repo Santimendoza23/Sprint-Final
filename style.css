@@ -1,0 +1,155 @@
+*{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+h1{ 
+    font-size: 2.8em;
+    text-align: center;}
+
+h2{ font-size: 2.1em;
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{ font-size: 1.3em;}
+
+body{ margin: 0;}
+
+.color-historia{ color: rgb(62, 133, 62);}
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10 px 30px;
+    border-radius: 10px;
+    border: 2px;
+    background-color: rgb(62, 133, 62);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(11, 68, 27);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;}
+
+section{
+    max-width: 1200px;
+    margin: auto;}
+
+header{
+    display:contents ;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img{
+    display: flexbox;
+    width: 200px;
+    height: 200px;
+}
+
+#img-carrito{
+ display: flexbox;
+ width: 50px;
+ height: 50px;
+}
+
+#nuevabici{
+    display:grid;
+    grid-template-columns: 40% 40% 20%;
+    padding: 15px;
+    justify-items: center;
+}
+
+#oportunidades{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social a{
+    display: row;
+    width: 75px;
+    height: 75px;
+    color:rgb(62, 133, 62);
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.box-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px
+  
+     
+}
+.box {
+    border-top: 2px solid rgb(62, 133, 62);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.precio{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(62, 133, 62); 
+}
+
+.testimonios { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito { 
+    display: block;
+    background-color: rgb(62, 133, 62);
+    padding: 20px;
+    min-width: 400px;
+}
+table{
+    width: 100%;
+}
+
+th, td {
+    color: rgb(62, 133, 62) ;
+}
+
+.borrar {
+    background-color: rgb(11, 68, 27);
+    border-radius: 50%;
+    padding: 5px 5px;
+    color: #FFFFFF;
+    cursor:pointer
+}
+
+#metodos{
+    display: flex;
+    justify-content:space-around;
+}
